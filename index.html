@@ -1,16 +1,49 @@
-<html>	
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 style="color: yellow;"> Introduction to Front-end developement. </h1>
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+        .parni-brojevi {
+            color: red;
+        }
+        .neparni-brojevi {
+            color: blue;
+        }
+        #special:hover {
+            font-style: italic;
+        }
+        .pseudo::after {
+            content: " -NEW";
+            color: red;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
 
-
-<p style="color: grey;"> A front-end developer architects and develops websites and applications using web technologies: </p>
-
-	<ul>
-	
-		<li style= "color: red;" >HTML</li>
-		<li style="color: green;">CSS</li>
-		<li style="color: blue;">JavaScript</li>
-		<li style="color: rgb(185, 71, 71);">PHP</li>
-	</ul>
+<body>
+    <h1>Main Heading</h1>
+    <p class="neparni-brojevi">Paragraph 1</p>
+    <a href="https://www.google.com/" style="color: green;">Google</a>
+    <a href="https://www.google.com/doodles" style="color: green;">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank" style="color: red;">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p class="pseudo parni-brojevi">Paragraph 2</p>
+        <p class="pseudo neparni-brojevi">Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p class="parni-brojevi">Paragraph 4</p>
+            <p class="neparni-brojevi">Paragraph 5</p>
+            <p class="parni-brojevi">Paragraph 6</p>
+            <p class="neparni-brojevi">Paragraph 7</p>
+            <p class="parni-brojevi">Paragraph 8</p>
+        </div>
+    </div>
+    <p class="neparni-brojevi">Paragraph 9</p>
+    <p style="color: red;" id="special">Paragraph 10</p>
+</body>
 
 </html>
